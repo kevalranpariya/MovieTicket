@@ -1,0 +1,618 @@
+
+
+   /*=============================================================================================================================
+ 									max-width: 1409px Start
+ ==============================================================================================================================*/
+ @media only screen and (max-width: 1409px){
+
+  
+
+ }
+  /*=============================================================================================================================
+                                      max-width: 1409px End
+  ==============================================================================================================================*/
+ 
+ 
+   /*=============================================================================================================================
+                                      max-width: 1199px   Start
+  ==============================================================================================================================*/
+  @media only screen and (max-width: 1199px){
+
+    /* Movies-page start  */
+
+    .toggle i{
+      display:block !important;  
+      color: white;
+      font-size: 28px;
+      }
+    .menu{
+      display: none;
+    }
+    
+    /* Movies-page End  */
+
+    /* Movies-front-page start  */
+
+    .toggle i{
+      display:block !important;  
+      color: white;
+      font-size: 28px;
+      }
+      .menu{
+      display: none !important;
+      }
+     
+
+    /* Movies-front-page End  */  
+
+    /* DMCA Page START  */
+    .toggle i{
+      display:block !important;  
+      color: white;
+      font-size: 28px;
+    }
+    .menu{
+      display: none;
+    }
+    /* DMCA Page End  */
+    
+    /* Counstact-US-page start  */
+
+    .toggle i{
+      display:block !important;  
+      color: white;
+      font-size: 28px;
+    }
+    .menu{
+      display: none;
+    }
+
+    /* Counstact-US-page end  */
+
+    /* About-us-page-Start  */
+
+    .toggle i{
+      display:block !important;  
+      color: white;
+      font-size: 28px;
+    }
+    .menu{
+      display: none;
+    }
+
+    /* About-us-page-End  */ 
+
+ 
+ }
+   /*=============================================================================================================================
+                                      max-width: 1199px   End
+  ==============================================================================================================================*/
+ 
+ /*=============================================================================================================================
+                                     max-width: 991px   Start
+ ==============================================================================================================================*/
+  @media only screen  and (max-width: 991px) {
+
+     /* Movies-page start  */
+
+    .toggle i{
+      display:block !important;  
+      color: white;
+      font-size: 28px;
+      }
+    
+    .lg-40{
+      width: 100px;
+    }
+    .lg-20{
+      width: 20%;
+    }
+
+    .lg-auto-w{
+      width: auto;
+    }
+
+    /* Movies-page End  */
+
+    /* Movies-front-page start  */
+
+    .toggle i{
+      display:block !important;  
+      color: white;
+      font-size: 28px;
+    }
+    .ADDS{
+      display: none !important;
+    }
+    .ADDbox{
+      display: inline-block !important;
+    }
+    .ADDbox img{
+      display: block !important;
+      text-align: center;
+  }
+
+    /* Movies-front-page End  */
+
+    /* DMCA Page START  */
+
+    .toggle i{
+      display:block !important;  
+      color: white;
+      font-size: 28px;
+    }
+
+    /* DMCA Page End  */
+
+    /* Counstact-US-page start  */
+
+    .toggle i{
+      display:block !important;  
+      color: white;
+      font-size: 28px;
+      }
+    
+     /* Counstact-US-page end  */ 
+     
+    /* About-us-page-Start  */
+
+     .toggle i{
+      display:block !important;  
+      color: white;
+      font-size: 28px;
+    }
+
+     /* About-us-page-Start  */
+
+     .toggle i{
+      display:block !important;  
+      color: white;
+      font-size: 28px;
+    }
+
+    /* About-us-page-Start  */
+
+      
+  
+ }
+ /*=============================================================================================================================
+                                     max-width: 991px   End
+ ==============================================================================================================================*/
+   /*=============================================================================================================================
+                                      Max-Width: 767px   Start
+  ==============================================================================================================================*/
+  @media only screen and (max-width: 767px){
+
+     /* Movies-page start  */
+
+    .MD-w-50{
+      width: 32%;
+    }
+    .vega-btn{
+      padding: 8px;
+      font-size: 13px;
+    }
+    /* Movies-page End  */
+
+    /* Movies-front-page start  */
+
+    .vega-btn{
+      padding: 8px;
+      font-size: 13px;
+    }
+
+    /* Movies-front-page End  */
+    
+    /* DMCA Page START  */
+
+    .vega-btn{
+      padding: 8px;
+      font-size: 13px;
+      }
+
+    /* DMCA Page START  */
+
+    /* Counstact-US-page start  */
+
+    .vega-btn{
+      padding: 8px;
+      font-size: 13px;
+      }
+    
+    /* Counstact-US-page end  */  
+
+    /* About-us-page-Start  */
+
+     .vega-btn{
+      padding: 8px;
+      font-size: 13px;
+      }
+
+    /* About-us-page-End */  
+
+  }  
+   /*=============================================================================================================================
+                                      Max-Width: 767px   End
+  ==============================================================================================================================*/
+ 
+  /*=============================================================================================================================
+                                      Max-Width: 600px   Start
+  ==============================================================================================================================*/
+  @media only screen and (max-width: 600px){
+
+    /* Movies-page start  */ 
+
+    .Sm-w-auto{
+      width: 25%;
+    }
+    .logo-img img{
+      width: 200px;
+    }
+    /* Movies-page start  */
+
+    /* Movies-front-page start  */
+     .logo-img img{
+        width: 200px;
+    }
+
+    /* Movies-front-page End  */
+
+    /* DMCA Page START  */
+
+     .img-logo img{
+        width: 200px;
+      }
+
+    /* DMCA Page START  */
+
+    /* Counstact-US-page start  */
+
+    .img-logo img{
+      width: 200px !important;
+      }
+
+     /* Counstact-US-page End  */
+
+    /* About-us-page-Start  */
+
+     .img-logo img{
+      width: 200px;
+      }
+
+    /* About-us-page-End  */  
+     
+     
+  
+ }
+   /*=============================================================================================================================
+                                      Max-Width: 600px   End
+  ==============================================================================================================================*/
+ 
+   /*=============================================================================================================================
+                                      Max-Width: 575px   Start
+  ==============================================================================================================================*/
+  @media only screen and (max-width: 575px){
+
+     /* Movies-page start  */
+
+    .footer2 a{
+      font-size: 12px;
+    }
+     header{
+      position: relative;
+      margin-bottom: 70px !important;
+    }
+    .search{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 90%;
+      left: 0%;
+      right: 0%;
+      text-align: center;
+     
+      } 
+
+    .search-field{
+      margin: 1px 0;
+      width: auto !important;
+      transition: none !important;
+      -webkit-transition:none !important ;
+      
+    }
+
+    /* Movies-page End  */
+
+    /* Movies-front-page start  */
+
+    .footer2 a{
+      font-size: 12px;
+      }
+       header{
+      position: relative;
+      margin-bottom: 70px !important;
+      }
+      .search{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 90%;
+      left: 0%;
+      right: 0%;
+      text-align: center;	
+      } 
+    
+      .search-field{
+      margin: 1px 0;
+      width: auto !important;
+      transition: none !important;
+      -webkit-transition:none !important ;
+      
+      }
+    sm-m-10{
+      margin: 10px;
+    }
+
+    /* Movies-front-page End  */
+
+    /* DMCA Page START  */
+
+    .footer2 a{
+      font-size: 12px;
+      }
+       header{
+      position: relative;
+      margin-bottom: 70px !important;
+      }
+      .search{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 90%;
+      left: 0%;
+      right: 0%;
+      text-align: center;
+       
+      } 
+    
+      .search-field{
+      margin: 1px 0;
+      width: auto !important;
+      transition: none !important;
+      -webkit-transition:none !important ;
+      
+    }
+    /* DMCA Page End  */
+
+    /* Counstact-US-page start  */
+
+    .footer2 a{
+      font-size: 12px;
+      }
+       header{
+      position: relative;
+      margin-bottom: 70px !important;
+      }
+      .search{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 90%;
+      left: 0%;
+      right: 0%;
+      text-align: center;
+       
+      } 
+    
+      .search-field{
+      margin: 1px 0;
+      width: auto !important;
+      transition: none !important;
+      -webkit-transition:none !important ;
+      
+      }
+    /* Counstact-US-page End  */  
+
+    /* About-us-page-Start  */
+
+    .footer2 a{
+      font-size: 12px;
+      }
+       header{
+      position: relative;
+      margin-bottom: 70px !important;
+      }
+      .search{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 90%;
+      left: 0%;
+      right: 0%;
+      text-align: center;
+       
+      } 
+    
+      .search-field{
+      margin: 1px 0;
+      width: auto !important;
+      transition: none !important;
+      -webkit-transition:none !important ;
+      
+      }
+  
+     /* About-us-page-End  */
+    
+    
+ }
+   /*=============================================================================================================================
+                                      Max-Width: 575px   End
+  ==============================================================================================================================*/
+ 
+   /*=============================================================================================================================
+                                      Max-Width: 425px   Start
+  ==============================================================================================================================*/
+  @media only screen and (max-width: 425px){
+
+  /* Movies-page start  */
+
+  .footer2 a{
+    font-size: 8px;
+  }
+
+  /* Movies-page End  */
+
+  /* Movies-front-page start  */
+
+  .footer2 a{
+		font-size: 8px;
+	  }
+
+   /* Movies-front-page End  */  
+
+  /* DMCA Page Start  */
+
+  .footer2 a{
+		font-size: 8px;
+	}
+
+  /* DMCA Page End  */
+
+  /* Counstact-US-page Start  */
+
+    .footer2 a{
+      font-size: 8px;
+      }
+
+  /* Counstact-US-page End  */
+  
+  /* About-us-page-Start  */
+
+  .footer2 a{
+		font-size: 8px;
+	  }
+
+    /* About-us-page-End */  
+
+ 
+  
+ }
+   /*=============================================================================================================================
+                                      Max-Width: 425px   End
+  ==============================================================================================================================*/
+ 
+   /*=============================================================================================================================
+                                      Max-Width: 375px   Start
+  ==============================================================================================================================*/
+  @media only screen and (max-width: 375px){
+
+  /* Movies-page start  */
+
+    .vega-btn{
+      font-size: 12px !important;
+    }
+    .copyright p{
+      font-size: 10px !important;
+    }
+
+  /* Movies-page End  */
+
+  /* Movies-front-page start  */
+
+    .vega-btn{
+      font-size: 12px !important;
+      }
+      footer p{
+      font-size: 8px !important;
+      }
+
+  /* Movies-front-page End  */ 
+
+  /* DMCA Page Start  */
+
+    .vega-btn{
+      font-size: 12px !important;
+      }
+      footer p{
+      font-size: 10px !important;
+      }
+  
+  /* DMCA Page End  */ 
+  
+  /* Counstact-US-page Start  */
+
+  .vega-btn{
+		font-size: 12px !important;
+	  }
+	  footer p{
+		font-size: 10px !important;
+	  }
+
+  /* Counstact-US-page End  */
+
+  /* About-us-page-Start  */
+
+  .vega-btn{
+		font-size: 12px !important;
+	  }
+	  footer p{
+		font-size: 10px !important;
+	  }
+
+   /* About-us-page-End */ 
+      
+    
+    
+
+ }
+   /*=============================================================================================================================
+                                      Max-Width:   375px   End
+  ==============================================================================================================================*/
+ 
+    /*=============================================================================================================================
+                                      Max-Width: 320px   Start
+  ==============================================================================================================================*/
+  @media only screen and (max-width: 320px){
+  /* Movies-page start  */
+
+    .footer2 a{
+      font-size: 7.5px;
+  }
+
+  /* Movies-page-End  */
+
+  /* Movies-front-page start  */
+
+  footer p{
+		font-size: 7.5px !important;
+	}
+	
+	.footer2 a{
+		font-size: 7.5px;
+	}
+
+  /* Movies-front-page End  */
+
+  /* DMCA Page Start  */
+  .footer2 a{
+		font-size: 7.5px;
+	}
+  /* DMCA Page End  */
+
+/* Counstact-US-page Start  */
+  .footer2 a{
+		font-size: 7.5px;
+	}
+/* Counstact-US-page End  */
+
+/* About-us-page-Start  */
+.footer2 a{
+  font-size: 7.5px;
+}
+
+/* About-us-page-End  */
+
+ }
+   /*=============================================================================================================================
+                                      Max-Width: 320px   End
+  ==============================================================================================================================*/

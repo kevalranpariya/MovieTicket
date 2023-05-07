@@ -1,0 +1,43 @@
+<%-include('header')%>
+
+<div class="IMGES xs-w-50">
+    <div class="row">
+        <!-- 1  line  -->
+
+
+
+
+        <%for(let dataM of search){%>
+            <div class="card rounded ms-2" style="width: 210px;">
+                <a href="/movie/<%= dataM.id%>"><img src="<%= dataM.thumbnail%>"
+                        class="card-img-top  rounded" width="auto" alt="..."></a>
+                <div class="card-body" style="width: 210px; ">
+                    <p class="ps-2 text-white-50 mb-0"><i class="ri-calendar-fill "></i>
+                        <%let date=dataM.release_date.toString(); let finalDate=date.substr(4,11)%>
+                            <%= finalDate%>
+                    </p>
+                    <a href="#" class="card-text text-white fs-6">
+                        <%=dataM.name %>
+                    </a>
+                </div>
+            </div>
+            <%}%>
+
+
+                <!-- paginathi start  -->
+                <nav aria-label="Page navigation example" class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <%for(let i=1; i<=pagination; i++){%>
+                            <li><a class="page-link me-1" href="?page=<%=i%>&s=<%=sea%>"><%= i%></a></li>
+                            <%}%>
+                    </ul>
+                </nav>
+                <!-- paginathi end  -->
+
+    </div>
+</div>
+</div>
+</div>
+</main>
+
+<%-include('footer')%>

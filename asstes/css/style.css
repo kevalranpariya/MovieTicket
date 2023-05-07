@@ -1,0 +1,1159 @@
+                                /* -------------------------Movies-page Start---------------------------
+                                -------------------------Movies-page-Start--------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containers1{
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+ul {
+    padding-left: 0rem !important;
+}
+.page-link{
+    background-color:  transparent !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.126) !important;
+}
+.page-link:hover{
+    background-color:  red !important;
+    color: white !important;
+}
+
+body{
+    background-color: #111111;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none
+}
+a:hover{
+    color: #000000;
+}
+.card{
+    width: 210px !important;
+}
+
+
+/* header start  */
+.menu{
+    margin-top: 15px;
+}
+.menu ul li a{
+	font-size: 14px;
+	color: #ffffff;
+    border: 1px solid transparent;
+    background-color: transparent;
+	padding: 10px;
+	transition: all 0.4s ease;
+
+}
+.menu ul li a:hover{
+    border-top: 2px solid #ffffff;
+	border-bottom: 2px solid #ffffff;
+}
+
+/* input  */
+.search-form {
+	right: 200px;
+	top: 200px;
+}
+
+.search-field {
+	background-color: transparent;
+    background-image: url(/img/scerch.png);
+    background-position: 11px center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    box-shadow: 0px 0px 8px 0px #ffffff;
+    cursor: pointer;
+    border-radius: 35px;
+    height: 40px;
+    margin: 3px 0;
+    padding: 0 0 0 40px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
+    width: 40px;
+    cursor: pointer;
+    border: none !important;
+}
+
+.search-field:focus {
+	background-color: #000;
+	border: 2px solid #c3c0ab;
+	cursor: text;
+	outline: 0;
+	width: 250px;
+  color:#fff;
+}
+.toggle i{
+    display: none;
+}
+
+/* header end  */
+
+/* MENUES START */
+.menu1{
+    background-color:#191919; 
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.heding{
+    text-align: center;
+}
+
+.heding ul li a:hover{
+    color:#000000;
+    border-bottom: 1px solid #ffffff;
+}
+
+
+.heding1{
+    text-align: center;
+}
+.heding-1 ul li a:hover{
+    color:#000000;
+    /* border-bottom: 2px solid #ffffff; */
+}
+
+.vega-btn{
+    display:inline-block;
+    color: #fff;
+    padding: 9px;
+    text-align: center;
+    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 32px -10px #fe0000;
+    margin: 5px 2px;
+    min-width: 70px;
+    transition: all 0.5s;
+}
+.heding-2 ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+.menu1 ul li{
+    display: inline-block;
+}
+
+/* img card strat */
+.IMGES{
+    text-align: center;
+    justify-content: center;
+}
+.card img{
+    transition: all 0.8s;
+
+}
+.card{
+    border: none;
+    width: 210px;
+    background-color: transparent;
+    margin-top:10px ;
+}
+
+.card img{
+    box-shadow: 0px 2px 5px #ffffff;
+}
+.card img:hover{
+    transform: scale(0.95);
+}
+.card-body p{
+    font-size: 14px;
+}
+.card-body a{
+    transition: all 0.7s !important;
+}
+.card-body a:hover{
+    color: red !important;
+}
+
+/* footer  */
+footer  {
+    background-color:#111111;
+    width: 10;
+}
+footer p{
+   
+    font-size: 14px;
+}
+.footer2{
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+}
+footer a{
+    transition: all 0.5s !important;
+}
+footer a:hover{
+    color :red !important;
+}
+                                /* -------------------------Movies-page-End---------------------------
+                                -------------------------Movies-page-End--------------------------- */
+
+
+
+                                /* -------------------------Movies-page-front-Start---------------------------
+                                -------------------------Movies-page-front-Start--------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containers1{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+ul {
+    padding-left: 0rem !important;
+}
+.col-xl-3{
+    background-color: #191919
+}
+.page-link{
+    background-color:  transparent !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.126) !important;
+}
+.page-link:hover{
+    background-color:  red !important;
+    color: white !important;
+}
+
+body{
+    background-color: #111111;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none
+}
+/* header start  */
+
+.menu{
+    margin-top: 15px;
+}
+.menu ul li a{
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 10px;
+    transition: all 0.4s ease;
+
+}
+.menu ul li a:hover{
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* input  */
+.search-form {
+    right: 200px;
+    top: 200px;
+}
+
+.search-field {
+    background-color: transparent;
+    background-image: url(/img/scerch.png);
+    background-position: 11px center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    box-shadow: 0px 0px 8px 0px #ffffff;
+    cursor: pointer;
+    border-radius: 35px;
+    height: 40px;
+    margin: 3px 0;
+    padding: 0 0 0 40px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
+    width: 40px;
+    cursor: pointer;
+    border: none !important;
+}
+
+
+.search-field:focus {
+    background-color: #000;
+    border: 2px solid #c3c0ab;
+    cursor: text;
+    outline: 0;
+    width: 250px;
+    color:#fff;
+}
+.toggle i{
+    display: none;
+}
+/* header end  */
+
+/* MENUES START */
+.menu1{
+    background-color:#191919; 
+    padding: 20px;
+}
+.heding{
+    text-align: center;
+}
+
+.vega-btn{
+    display:inline-block;
+    color: #fff;
+    padding: 9px;
+    text-align: center;
+    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 32px -10px #fe0000;
+    margin: 5px 2px;
+    min-width: 70px;
+    transition: all 0.5s;
+}
+.vega-btn1{
+    display:inline-block;
+    color: #fff;
+    padding: 9px;
+    text-align: center;
+    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5px 2px;
+    min-width: 70px;
+    transition: all 0.5s;
+}
+.heding ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+.heding1{
+    text-align: center;
+}
+
+.heding-1 ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+
+.heding-2 ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+/* movie-titel start  */
+.movie-titel a{
+    font-size: 14px;
+    transition: all 0.4s;
+}
+.movie-titel a:hover{
+    color: white;
+}
+.movie-titel p{
+    font-size: 14px;
+}
+
+/* movies Content start  */
+.movie-titel1 h1{
+    font-size: 2.2rem !important;
+}
+.movie-titel1{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.253);
+    border-top: 1px solid rgba(255, 255, 255, 0.215);
+    padding:10px;
+}
+.movie-titel1 p{
+    font-size: 12px;
+}
+
+.movie-name{
+    padding: 10px;
+}
+.movie-name p{
+    font-size: 16.9px;
+}
+.movie-list p{
+    margin-bottom: 0.4rem !important;
+}
+.ADDbox{
+    display: none;
+    width: 300px;
+    height: 600px;
+    background-color: #000;
+}
+.ADDbox img{
+    display: none;
+    text-align: center;
+}    
+/* footer  */
+footer  {
+    background-color:#111111;
+    width: 10;
+}
+footer p{
+    
+    font-size: 14px;
+}
+.footer2{
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+}
+footer a{
+    transition: all 0.5s !important;
+}
+footer a:hover{
+    color :red !important;
+}
+                            /* -------------------------Movies-page-front-End---------------------------
+                                -------------------------Movies-page-front-End--------------------------- */
+
+
+
+                            /* -------------------------DMCA-Start---------------------------
+                                ------------------------DMCA-Start--------------------------- */    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containers1{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.page-link{
+    background-color:  transparent !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.126) !important;
+}
+.page-link:hover{
+    background-color:  red !important;
+    color: white !important;
+}
+
+body{
+    background-color: #111111;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* header start  */
+
+.menu{
+    margin-top: 15px;
+}
+.menu ul li a{
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 10px;
+    transition: all 0.4s ease;
+
+}
+.menu ul li a:hover{
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* input  */
+.search-form {
+    right: 200px;
+    top: 200px;
+}
+
+    .search-field {
+    background-color: transparent;
+    background-image: url(/img/scerch.png);
+    background-position: 11px center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    /* border: 1px solid #ffffff; */
+    box-shadow: 0px 0px 8px 0px #ffffff;
+    cursor: pointer;
+    border-radius: 35px;
+    height: 40px;
+    margin: 3px 0;
+    padding: 0 0 0 40px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
+    width: 40px;
+    cursor: pointer;
+    border: none !important;
+}
+
+.search-field:focus {
+    background-color: #000;
+    border: 2px solid #c3c0ab;
+    cursor: text;
+    outline: 0;
+    width: 250px;
+    color:#fff;
+}
+.toggle i{
+    display: none;
+}
+
+/* header end  */
+
+/* MENUES START */
+.menu1{
+    background-color:#191919; 
+    padding: 20px;
+}
+
+.heding{
+    text-align: center;
+}
+.heding ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+.vega-btn{
+    display:inline-block;
+    color: #fff;
+    padding: 9px;
+    text-align: center;
+    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 32px -10px #fe0000;
+    margin: 5px 2px;
+    min-width: 70px;
+    transition: all 0.5s;
+}
+.heding1{
+    text-align: center;
+}
+
+.heding-1 ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+
+.heding-2 ul li a{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 32px -10px #fe0000;
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 10px;
+    transition: all 0.4s;
+}
+.heding-2 ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+
+.heading-6{
+    border-top: 1px solid #ffffff3f;
+    border-bottom: 1px solid #ffffff30;
+}
+
+/* arlet Start  */
+
+.arlet ul li {
+    list-style: block;
+    color: white;
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+
+/* arlet End  */
+
+/* footer  */
+footer  {
+    background-color:#111111;
+    width: 10;
+}
+footer p{
+    
+    font-size: 14px;
+}
+.footer2{
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+}
+footer a{
+    transition: all 0.5s !important;
+}
+footer a:hover{
+    color :red !important;
+}                          
+
+                                /* -------------------------DMCA-End---------------------------
+                                ------------------------DMCA-End--------------------------- */
+                                
+                                
+                                /* -------------------------Contact-US-Start---------------------------
+                                ------------------------Contact-US-Start--------------------------- */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containers1{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.page-link{
+    background-color:  transparent !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.126) !important;
+}
+.page-link:hover{
+    background-color:  red !important;
+    color: white !important;
+}
+
+body{
+    background-color: #111111;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none
+}
+/* header start  */
+
+.menu{
+    margin-top: 15px;
+}
+.menu ul li a{
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 10px;
+    transition: all 0.4s ease;
+
+}
+.menu ul li a:hover{
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* input  */
+.search-form {
+    right: 200px;
+    top: 200px;
+}
+
+    .search-field {
+    background-color: transparent;
+    background-image: url(/img/scerch.png);
+    background-position: 11px center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    box-shadow: 0px 0px 8px 0px #ffffff;
+    cursor: pointer;
+    border-radius: 35px;
+    height: 40px;
+    margin: 3px 0;
+    padding: 0 0 0 40px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
+    width: 40px;
+    cursor: pointer;
+    border: none !important;
+}
+
+.search-field:focus {
+    background-color: #000;
+    border: 2px solid #c3c0ab;
+    cursor: text;
+    outline: 0;
+    width: 250px;
+    color:#fff;
+}
+.toggle i{
+    display: none;
+}
+
+/* header end  */
+
+/* MENUES START */
+.menu1{
+    background-color:#191919; 
+    padding: 20px;
+}
+.heding{
+    text-align: center;
+}
+
+.heding1{
+    text-align: center;
+}
+.heding ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+.vega-btn{
+    display:inline-block;
+    color: #fff;
+    padding: 9px;
+    text-align: center;
+    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 32px -10px #fe0000;
+    margin: 5px 2px;
+    min-width: 70px;
+    transition: all 0.5s;
+}
+
+.heding-1 ul li a:hover{
+    color:#000000;
+    border-bottom: 1px solid #ffffff;
+}
+
+.heding-2 ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+
+.heading-6{
+    border-top: 1px solid #ffffff3f;
+    border-bottom: 1px solid #ffffff30;
+}
+/* footer  */
+footer  {
+    background-color:#111111;
+    width: 10;
+}
+footer p{
+    
+    font-size: 14px;
+}
+.footer2{
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+}
+footer a{
+    transition: all 0.5s !important;
+}
+footer a:hover{
+    color :red !important;
+}                                
+                                
+                                  /* -------------------------Contact-US-END---------------------------
+                                ------------------------Contact-US-END--------------------------- */ 
+
+                                /* -------------------------About-Us-Start---------------------------
+                                ------------------------About-Us-Start--------------------------- */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containers1{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.page-link{
+    background-color:  transparent !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.126) !important;
+}
+.page-link:hover{
+    background-color:  red !important;
+    color: white !important;
+}
+
+body{
+    background-color: #111111;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* header start  */
+.menu{
+    margin-top: 15px;
+}
+.menu ul li a{
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 10px;
+    transition: all 0.4s ease;
+
+}
+.menu ul li a:hover{
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* input  */
+.search-form {
+    right: 200px;
+    top: 200px;
+}
+
+.search-field {
+    background-color: transparent;
+    background-image: url(/img/scerch.png);
+    background-position: 11px center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    box-shadow: 0px 0px 8px 0px #ffffff;
+    cursor: pointer;
+    border-radius: 35px;
+    height: 40px;
+    margin: 3px 0;
+    padding: 0 0 0 40px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
+    width: 40px;
+    cursor: pointer;
+    border: none !important;
+}
+
+.search-field:focus {
+    background-color: #000;
+    border: 2px solid #c3c0ab;
+    cursor: text;
+    outline: 0;
+    width: 250px;
+    color:#fff;
+}
+.toggle i{
+    display: none;
+}
+
+/* header end  */
+
+.main_movie{
+    padding: 35px 0;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid hsla(0,0%,6%,.07);
+    user-select: none;
+    margin: 0 24px;
+}
+
+.main_movie .movie_name{
+    width: 387px;
+    margin-right: 35px;
+    -webkit-tap-highlight-color: transparent;
+    color: white;
+    font-size: 25px;
+}
+
+.main_movie .movie_show{
+        display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: auto;
+    align-items: baseline;
+    justify-content: center;
+    grid-row-gap: 25px;
+    grid-column-gap: 16px;
+}
+
+.movie_show .single_show{
+        position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #506d85;
+    font-weight: 300;
+}
+
+.movie_show .single_show .show_time{
+        width: 131px;
+    height: 68px;
+    padding: 12px 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border: 1px solid hsla(0, 0%, 100%, 0.07);
+    box-sizing: border-box;
+    letter-spacing: -.08px;
+}
+
+.movie_show .single_show .show_time .seat_price{
+        font-size: 10px;
+    color: #8ba6c1;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+
+/* MENUES START */
+.menu1{
+    background-color:#191919; 
+    padding: 20px;
+}
+.heding{
+    text-align: center;
+}
+
+.heding1{
+    text-align: center;
+}
+.vega-btn{
+    display:inline-block;
+    color: #fff;
+    padding: 9px;
+    text-align: center;
+    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 32px -10px #fe0000;
+    margin: 5px 2px;
+    min-width: 70px;
+    transition: all 0.5s;
+}
+.heding ul li a:hover{
+    color:#000000;
+    border-bottom: 1px solid #ffffff;
+}
+
+
+.heding-1 ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+a:hover{
+    background-color: #000000;
+}
+
+
+.heding-2 ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+.heading-6{
+    border-top: 1px solid #ffffff3f;
+    border-bottom: 1px solid #ffffff30;
+}
+
+/* arlet Start  */
+.arlet ul li {
+    list-style: block;
+    color: white;
+    opacity: 0.7;
+    font-weight: 600;
+    margin: 10px 0;
+}
+/* arlet End  */
+
+/* footer  */
+footer  {
+    background-color:#111111;
+    width: 10;
+}
+footer p{
+    
+    font-size: 14px;
+}
+.footer2{
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+}
+footer a{
+    transition: all 0.5s !important;
+}
+footer a:hover{
+    color :red !important;
+}
+                                /* -------------------------About-Us-Start---------------------------
+                                ------------------------About-Us-Start--------------------------- */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containers1{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.page-link{
+    background-color:  transparent !important;
+    color: white !important;
+    border: 1px solid rgba(255, 255, 255, 0.126) !important;
+}
+.page-link:hover{
+    background-color:  red !important;
+    color: white !important;
+}
+
+body{
+    background-color: #111111;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* header start  */
+.menu{
+    margin-top: 15px;
+}
+.menu ul li a{
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    background-color: transparent;
+    padding: 10px;
+    transition: all 0.4s ease;
+
+}
+.menu ul li a:hover{
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* input  */
+.search-form {
+    right: 200px;
+    top: 200px;
+}
+
+.search-field {
+    background-color: transparent;
+    background-image: url(/img/scerch.png);
+    background-position: 11px center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    box-shadow: 0px 0px 8px 0px #ffffff;
+    cursor: pointer;
+    border-radius: 35px;
+    height: 40px;
+    margin: 3px 0;
+    padding: 0 0 0 40px;
+    position: relative;
+    -webkit-transition: width 400ms ease, background 400ms ease;
+    transition: width 400ms ease, background 400ms ease;
+    width: 40px;
+    cursor: pointer;
+    border: none !important;
+}
+
+.search-field:focus {
+    background-color: #000;
+    border: 2px solid #c3c0ab;
+    cursor: text;
+    outline: 0;
+    width: 250px;
+    color:#fff;
+}
+.toggle i{
+    display: none;
+}
+
+/* header end  */
+
+/* MENUES START */
+.menu1{
+    background-color:#191919; 
+    padding: 20px;
+}
+.heding{
+    text-align: center;
+}
+
+.heding1{
+    text-align: center;
+}
+.vega-btn{
+    display:inline-block;
+    color: #fff;
+    padding: 9px;
+    text-align: center;
+    transition: 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 32px -10px #fe0000;
+    margin: 5px 2px;
+    min-width: 70px;
+    transition: all 0.5s;
+}
+.heding ul li a:hover{
+    color:#000000;
+    border-bottom: 1px solid #ffffff;
+}
+
+
+.heding-1 ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+a:hover{
+    background-color: #000000;
+}
+
+
+.heding-2 ul li a:hover{
+    color:#000000;
+    border-bottom: 2px solid #ffffff;
+}
+.heading-6{
+    border-top: 1px solid #ffffff3f;
+    border-bottom: 1px solid #ffffff30;
+}
+
+/* arlet Start  */
+.arlet ul li {
+    list-style: block;
+    color: white;
+    opacity: 0.7;
+    font-weight: 600;
+    margin: 10px 0;
+}
+/* arlet End  */
+
+/* footer  */
+footer  {
+    background-color:#111111;
+    width: 10;
+}
+footer p{
+    
+    font-size: 14px;
+}
+.footer2{
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+}
+footer a{
+    transition: all 0.5s !important;
+}
+footer a:hover{
+    color :red !important;
+}                                
+
+

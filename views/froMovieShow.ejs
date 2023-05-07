@@ -1,0 +1,30 @@
+<%-include('header')%>
+
+
+<div class="containers1">
+    <%for(let data of allShows){%>
+    <div class="main_movie">
+        <div class="movie_name">
+            <%= data.mallID.name%>
+        </div>
+        <div class="movie_show">
+            <%for(let time of data.time){%>
+            <a href="/seat/<%= data.id%>/?time=<%=time%>">
+                <div class="single_show">
+                    <div class="show_time">
+                        <span>
+                            <%= time%>
+                        </span>
+                        
+                    </div>
+                </div>
+            </a>
+            <%}%>
+        </div>
+    </div>
+    <%}%>
+</div>
+
+
+
+<%-include('footer')%>

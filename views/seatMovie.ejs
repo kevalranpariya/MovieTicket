@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/bookMovie.css">
+</head>
+
+<body>
+  <section id="section">
+    <div class="container">
+      <!-- leftCont -->
+      <div class="leftCont">
+        <div class="leftMainCont">
+          <div class="legendContainer">
+            <ul>
+              <li>
+                <div class="seat legend"></div>
+                <small>Available</small>
+              </li>
+              <li>
+                <div class="seat legend selected"></div>
+                <small>Selected</small>
+              </li>
+              <li>
+                <div class="seat legend occupied"></div>
+                <small>Occupied</small>
+              </li>
+            </ul>
+          </div>
+          <!-- seat Container -->
+          <div class="mainSeatCont">
+            <div class="screen">
+              <small>SCREEN</small>
+            </div>
+            
+
+
+            <div class="seatCont" id="seatCont">
+              <% var no=1 %>
+                <% for(var j=1; j<=10; j++){ %>
+                  <div class="seatRowCont1 seatRowCont">
+                    <div class="row">
+                      <% for(var i=1; i<=10;i++){ %>
+                        <a style="text-decoration: none;" href="#">
+                          <div style="color: #fff;" class="seat <% for(let se of seat){ for(let book of se.ticket){if(book == no){ %>occupied<%}}}%>" id="seats" value="<%= no %>">
+                            
+                          </div>
+                        </a>
+                        <% no+=1 %>
+                          <% } %>
+                    </div>
+                  </div>
+                  <% } %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Right Cont -->
+      <div class="rightCont">
+        <div class="confirmCont">
+          <div class="rightTopCont">
+            <!-- moviename -->
+
+            <div class="movieInfo">
+                <div class="selectMovie" style="display : none;">
+                    <label>
+                      <p>Select Your Movie</p>
+                      <select id="selectMovie"></select>
+                    </label>
+                  </div>
+              <div class="movieName">
+                <p>MOVIE NAME</p>
+                <h1 id="movieName">
+                  <%= data.movieID.name %>
+                </h1>
+              </div>
+              <div class="moviePrice">
+                <p>MOVIE PRICE</p>
+                <h1 id="moviePrice">$ <%= data.movieID.price%></h1>
+              </div>
+              <div class="dateCont">
+                <p>Date</p>
+                <p class="dateOn">
+                  <%let date=data.movieID.release_date.toString(); let finalDate=date.substr(4,11)%>
+                            <%= finalDate%>
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div class="rightBottomCont">
+            <div class="selectedSeatCont">
+              <p>SELECTED SEATS</p>
+              <form action="/userBookSeats" method="post">
+                <div class="selectedSeatsHolder" id="selectedSeatsHolder">
+                  <span class="noSelected">No Seat Selected</span>
+                </div>
+                
+              </div>
+              <!-- Seat number and price -->
+              
+              <input type="hidden" value="<%=data.id%>" name="showID">
+              <input type="hidden" value="<%=time%>" name="time">
+              <div class="numberOfSeatsCont">
+              <div class="numberOfSeatEl">
+                <p><span id="numberOfSeat">0</span> Seats(s)</p>
+              </div>
+              <div class="priceCont">
+                <p id="totalPrice">$ 0</p>
+              </div>
+            </div>
+            <!-- button Cont -->
+
+            <div class="buttonCont">
+              <div class="cancelBtn">
+                <button id="cancelBtn">Cancel</button>
+              </div>
+              <div class="proceedBtnEl">
+                <button id="proceedBtn" type="submit">Continue</button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+<script>
+  const moviesList = [
+    { movieName: "Tom and Jerry 2021", price: 7 },
+    { movieName: "Master", price: 5 },
+    { movieName: "Justice League", price: 4 }
+  ];
+
+  const selectMovieEl = document.getElementById("selectMovie");
+
+  const allSeatCont = document.querySelectorAll("#seatCont .seat");
+
+  const selectedSeatsHolderEl = document.getElementById("selectedSeatsHolder");
+
+  const moviePriceEl = document.getElementById("moviePrice");
+
+  const cancelBtnEL = document.getElementById("cancelBtn");
+
+  const proceedBtnEl = document.getElementById("proceedBtn");
+
+  moviesList.forEach((movie) => {
+    const optionEl = document.createElement("option");
+    optionEl.innerHTML = `${movie.movieName} $${movie.price}`;
+    selectMovieEl.appendChild(optionEl);
+  });
+
+  let moviePrice = <%= data.movieID.price%>;
+  let currentMovieName = `Tom and Jerry 2021`;
+
+  selectMovieEl.addEventListener("input", (e) => {
+    let movieName = e.target.value.split("");
+    let dollarIndex = movieName.indexOf("$");
+    let movie = movieName.splice(0, dollarIndex - 1).join("");
+    currentMovieName = movie;
+    moviePrice = JSON.parse(movieName.splice(2, dollarIndex).join(""));
+
+    updatMovieName(movie, moviePrice);
+    updatePrice(moviePrice, takenSeats.length);
+  });
+
+  let initialSeatValue = 0;
+  allSeatCont.forEach((seat) => {
+    const attr = document.createAttribute("data-seatid");
+    attr.value = ++initialSeatValue;
+    seat.setAttributeNode(attr);
+  });
+
+  const seatContEl = document.querySelectorAll("#seatCont .seat:not(.occupied)");
+
+  let takenSeats = [];
+
+  seatContEl.forEach((seat) => {
+    seat.addEventListener("click", (e) => {
+      let isSelected = seat.classList.contains("selected");
+      let seatId = JSON.parse(seat.dataset.seatid);
+
+      if (!isSelected) {
+        seat.classList.add("selected");
+        takenSeats.push(seatId);
+        takenSeats = [...new Set(takenSeats)];
+      } else if (isSelected) {
+        seat.classList.remove("selected");
+
+        takenSeats = takenSeats.filter((seat) => {
+          if (seat !== seatId) {
+            return seat;
+          }
+        });
+      }
+      updateSeats();
+      updatePrice(moviePrice, takenSeats.length);
+    });
+  });
+
+  function updateSeats() {
+    selectedSeatsHolderEl.innerHTML = ``;
+
+    takenSeats.forEach((seat) => {
+      const seatHolder = document.createElement("input");
+      seatHolder.classList.add("selectedSeat");
+      seatHolder.setAttribute('name', 'ticket[]')
+      seatHolder.setAttribute('value', seat)
+      selectedSeatsHolderEl.appendChild(seatHolder);
+
+      seatHolder.innerHTML = seat;
+    });
+
+    if (!takenSeats.length) {
+      const spanEl = document.createElement("span");
+      spanEl.classList.add("noSelected");
+      spanEl.innerHTML = `NO SEAT SELECTED`;
+      selectedSeatsHolderEl.appendChild(spanEl);
+    }
+
+    seatCount();
+  }
+
+  function seatCount() {
+    const numberOfSeatEl = document.getElementById("numberOfSeat");
+    numberOfSeatEl.innerHTML = takenSeats.length;
+  }
+
+  function updatMovieName(movieName, price) {
+    const movieNameEl = document.getElementById("movieName");
+    const moviePriceEl = document.getElementById("moviePrice");
+    movieNameEl.innerHTML = movieName;
+    moviePriceEl.innerHTML = `$ ${price}`;
+  }
+
+  function updatePrice(price, seats) {
+    const totalPriceEl = document.getElementById("totalPrice");
+    let total = seats * price;
+    totalPriceEl.innerHTML = `$ ${total}`;
+  }
+
+  cancelBtn.addEventListener("click", (e) => {
+    cancelSeats();
+  });
+
+  function cancelSeats() {
+    takenSeats = [];
+    seatContEl.forEach((seat) => {
+      seat.classList.remove("selected");
+    });
+    updatePrice(0, 0);
+    updateSeats();
+  }
+
+  function successModal(movieNameIn, totalPrice, successTrue) {
+    const bodyEl = document.querySelector("body");
+
+    const sectionEl = document.getElementById("section");
+
+    const overlay = document.createElement("div");
+
+    overlay.classList.add("overlay");
+
+    sectionEl.appendChild(overlay);
+
+    const successModal = document.createElement("div");
+    successModal.classList.add("successModal");
+    const modalTop = document.createElement("div");
+    modalTop.classList.add("modalTop");
+    const popImg = document.createElement("img");
+    popImg.src =
+      "https://github.com/Dinesh1042/Vanilla-JavaScript-Projects/blob/main/Movie%20Booking/asset/pop.png?raw=true";
+    modalTop.appendChild(popImg);
+
+    successModal.appendChild(modalTop);
+
+    // Modal Center
+
+    const modalCenter = document.createElement("div");
+    const modalHeading = document.createElement("h1");
+    modalCenter.classList.add("modalCenter");
+    modalHeading.innerHTML = `Ticked Booked Successfully`;
+    modalCenter.appendChild(modalHeading);
+    const modalPara = document.createElement("p");
+    modalCenter.appendChild(modalPara);
+    modalPara.innerHTML = `${movieNameIn} movie ticket have been booked successfully.`;
+    successModal.appendChild(modalCenter);
+
+    // modal Bottom
+
+    const modalBottom = document.createElement("div");
+    modalBottom.classList.add("modalBottom");
+    const successBtn = document.createElement("button");
+
+    successBtn.innerHTML = `Ok Got It!`;
+    modalBottom.appendChild(successBtn);
+    successModal.appendChild(modalBottom);
+
+    successBtn.addEventListener("click", (e) => {
+      removeModal();
+    });
+
+    window.addEventListener("click", (e) => {
+      if (e.target.classList.contains("overlay")) {
+        removeModal();
+      }
+    });
+
+    function removeModal() {
+      overlay.remove();
+      successModal.remove();
+      bodyEl.classList.remove("modal-active");
+      cancelSeats();
+    }
+
+    sectionEl.appendChild(successModal);
+  }
+
+  proceedBtnEl.addEventListener("click", (e) => {
+    if (takenSeats.length) {
+      const bodyEl = document.querySelector("body");
+      bodyEl.classList.add("modal-active");
+      successModal(currentMovieName, moviePrice * takenSeats.length);
+    } else {
+      alert("Oops no seat Selected");
+    }
+  });
+
+</script>
+
+</html>

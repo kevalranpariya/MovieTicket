@@ -1,0 +1,119 @@
+<%- include('adminSidebar')%>
+
+ 
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Forms/</span> Vertical Layouts</h4>
+
+              <!-- Basic Layout -->
+              <div class="row">
+                <div class="col-xl">
+                  <div class="card mb-4" style="width: 50%;">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                      <h5 class="mb-0">Movie Information</h5>
+                      <small class="text-muted float-end">Default label</small>
+                    </div>
+                    <div class="card-body">
+                      <form action="/admin/addmovieInsertData" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-fullname">Movie Name</label>
+                          <input type="text" class="form-control" name="name" id="basic-default-fullname" placeholder="Movie Name" />
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-company">Movie Release Date</label>
+                          <input type="date" class="form-control" id="basic-default-company" name="release_date"/>
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-company">Movie Run Time</label>
+                          <input type="time" class="form-control" id="basic-default-company" name="runtime" />
+                        </div>
+                        <div class="mb-3">
+                          <% var language = ['English','Hindi','Gujarati']%>
+                          <label class="form-label" for="basic-default-email">Language</label>
+                          <%for(let lan of language){%>
+                            <div class="input-group mb-1">
+                              <div class="input-group-text">
+                                <input class="form-check-input mt-0" type="checkbox" name="language[]" value="<%= lan%>" aria-label="Checkbox for following text input">
+                              </div>
+                              <input type="text" class="form-control" aria-label="Text input with checkbox" value="<%= lan%>" readonly>
+                            </div>
+                          <%}%>
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-phone">IMDB rating</label>
+                          <input
+                            type="text"
+                            id="basic-default-phone"
+                            class="form-control phone-mask"
+                            placeholder="IMDB Rating"
+                            name="imdb"
+                          />
+                          <% let genreArray = ['Drama','Action','Horror','Thriller','Science fiction','Crime','Romance','Comedy','Adventure','Fantasy','Documentary','Epic','Animation','War','Mystery','Experimental','Biographical','Dark comedy','Martial arts','Television','Sports','Superhero','Dance']; %>
+                        </div>
+
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-fullname">Ticket Price</label>
+                          <input type="text" class="form-control" name="price" id="basic-default-fullname" placeholder="Movie Ticket Price" />
+                        </div>
+                        <div class="mb-1">
+                          
+                          <label class="form-label" for="basic-default-message">Genre</label><br>
+                        </div>
+                        <% for(let genreData of genreArray){%>
+                        <div class="input-group mb-1">
+                          <div class="input-group-text">
+                            <input class="form-check-input mt-0" type="checkbox" name="genre[]" value="<%= genreData%>" aria-label="Checkbox for following text input">
+                          </div>
+                          <input type="text" class="form-control" aria-label="Text input with checkbox" value="<%= genreData%>" readonly>
+                        </div>
+                        <%}%>
+                        
+                        <div class="mb-3 mt-3">
+                          <label class="form-label" for="basic-default-email">Thumbnail</label>
+                          <div class="input-group input-group-merge">
+                            <input
+                              type="file"
+                              id="basic-default-email"
+                              class="form-control"
+                              name="thumbnail"
+                            />
+                          </div>
+                        </div>
+                        <div class="mb-3 mt-3">
+                          <label class="form-label" for="basic-default-email">Screen Short</label>
+                          <div class="input-group input-group-merge">
+                            <input
+                              type="file"
+                              id="basic-default-email"
+                              class="form-control"
+                              name="picture"
+                              multiple
+                            />
+                          </div>
+                        </div>
+
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-message">Description</label>
+                          <textarea
+                            id="basic-default-message"
+                            class="form-control"
+                            placeholder="Movie Description, here"
+                            name="description"
+                          ></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Add Movie</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <%- include('adminFooter')%>

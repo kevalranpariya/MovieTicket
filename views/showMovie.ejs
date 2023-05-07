@@ -1,0 +1,114 @@
+<%-include('header')%>
+    <!-- movies Content start  -->
+
+    <div class="containers1 mt-3">
+        <div class="d-flex">
+            <div class="col-xl-9 m-0">
+
+                <div class="movie-titel1 m-3 d-felx justify-content-center">
+                    <h1 class="text-white">
+                        <%= data.name%>
+                    </h1>
+                    <p class="ps-6 text-white-50 mb-0 m-2 "><i class="ri-calendar-fill "></i>
+                        <%let date=data.release_date.toString(); let finalDate=date.substr(4,11)%>
+                            <%= finalDate%>
+                    </p>
+                </div>
+
+                <div class="movie-name mt-4">
+
+
+                    <p style="text-align: center;">
+                        <img src="<%=data.thumbnail%>" style="width: 300px; height: 450px; object-fit: cover;"
+                            class="img-fluid" alt="">
+                    </p>
+
+                    <h3 style="text-align: center;">
+                        <span style="color: #00ffff;">
+                            <strong class="fs-4">
+                                <strong class=fs-4>
+                                    <%= data.name%>
+                                </strong>
+                        </span>
+                    </h3>
+
+                    <h3 class="movie-list">
+                        <strong>
+                            <span class="text-white fs-3">Movie Info:</span>
+                        </strong>
+                        <br>
+                        <a href="#" class="fs-5 text-success">👉 IMDb Rating:- <%= data.imdb%>/10</a>
+                        <p class="text-white-50"> <strong class="text-white">Movie Name :</strong>
+                            <%= data.name%>
+                        </p>
+                        <p class="text-danger"> <strong class="text-white">Language :</strong>
+                            <%let language=data.language.toString(); let finLanguage=language.replace(',',' + ')%> <%= finLanguage%></p>
+                           <p class="text-white-50"> <strong class="text-white">Released Date :</strong> <%=finalDate %></p>
+                           <p class="text-white-50"> <strong class="text-white">Runtime :</strong> <%let runt =  data.runtime.toString(); let time = runt.substr(1,1)%><%= time%>h <% let min = runt.substr(3,2)%><%= min%>m</p>
+                           <p class="text-danger"> <strong class="text-white">Genre :</strong> <% 
+                                let genre = ''; 
+                                data.genre.forEach(e=>{
+                                    genre+= e;
+                                    genre+=' || '
+                                });
+
+                                let fingenre = genre.substring(genre.length-4,0)
+                            %><%= fingenre%></p>
+                            <br>
+                        </h3>
+
+                        <h3 style="text-align: center;">
+                            <span style="color: #00ffff;">Movie Short Description : </span>
+                        </h3>
+                        <p class="text-white-50">☄️ <%= data.description%></p>
+
+                        <h3 style="text-align: center;">
+                            <span style="color: #00ffff;">Screenshots: (Must See Before Book Movie Ticket)…</span>
+                        </h3>
+                        <p style="text-align:center;">
+                            <%data.picture.forEach(e=>{%>
+                            <img src="<%= e%>" class="img-fluid ms-2 my-2" alt="">
+                            <% })%> 
+                       </p>
+
+                       
+                        
+                       <h3 style="text-align: center;">
+                        <span class="text-white fs-4"><%= data.name%> <span style="color: #ffa500;">Ticket Book</span> Now</span>
+                    </h3>
+                    <p style="text-align: center;">
+                        <a href="/shows/<%=data.id %>"><button class="btn btn-lg fw-bold me-2 fs-6 vega-btn1" style="background:linear-gradient(135deg,#0ebac3,#09d261);color: #fdf8f2;">Go to Seat Book</button></a>
+                        
+                    </p>
+                    </div>
+
+            </div> 
+            <div class="p-3 ADDS">
+                <%for(let dataM of rec){%>
+                    <div class="card rounded ms-2" style="width: 210px;">
+                        <a href="/movie/<%= dataM.id%>"><img src="<%= dataM.thumbnail%>"
+                                class="card-img-top  rounded" width="auto" alt="..."></a>
+                        <div class="card-body" style="width: 210px; ">
+                            <p class="ps-2 text-white-50 mb-0"><i class="ri-calendar-fill "></i>
+                                <%let date=dataM.release_date.toString(); let finalDate=date.substr(4,11)%>
+                                    <%= finalDate%>
+                            </p>
+                            <a href="#" class="card-text text-white fs-6">
+                                <%=dataM.name %>
+                            </a>
+                        </div>
+                    </div>
+                <%}%>
+            </div>
+        </div>
+    </div>
+
+    <div class="containers1">
+        <div class="ADDbox">
+            <img src="Images/Add-img.png" alt="">
+        </div>
+
+    </div>
+    <!-- movie-list end  -->
+
+    <%-include('footer')%>
